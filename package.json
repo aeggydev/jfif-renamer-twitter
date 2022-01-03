@@ -1,0 +1,19 @@
+{
+  "name": "jfif-renamer-twitter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rm -f src/**/*.js && tsc src/background.ts",
+    "pack": "npm run build && rm -rf dist && mkdir dist && cp -r src/* dist && rm dist/background.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "aeggydev <kucernak.a@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chrome": "0.0.174"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
